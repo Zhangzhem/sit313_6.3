@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zheming Zhang">
+    <meta name="google-signin-client_id" content="912445497944-qnkc0i88vq186nnmvs7bqaeg9nj7pavt.apps.googleusercontent.com">
+    <meta name="client-id" content="912445497944-qnkc0i88vq186nnmvs7bqaeg9nj7pavt.apps.googleusercontent.com">
+    <title>iCrowdTask Login</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+</head>
+
+<body>
+    
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton"></script>
+    <div id="container">
+        <div id="head-container">
+            <h2>iCrowdTask Login</h2>
+        </div>
+
+        <div id="main-container">
+            <div id="signin">
+                <h3>Sign in</h3>
+            </div>
+            <div id="signin">
+                <form action="/signup" method="POST">
+                    <input value="sign up" type="submit" id="signup">
+                </form>
+            </div>
+
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="inputEmail">Your email</label>
+                    <input class="form-input" name="inputEmail" type="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" data-width="200px">Your Password</label>
+                    <input class="form-input" name="inputPassword" type="password">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="inputCheckbox">
+                    <label for="inputCheckbox">Save password</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" id="submit">
+                </div>
+
+            </form>
+
+            <form action="/forgot" method="POST">
+                <div class="form-group">
+                    <input type="submit" id="submit" value="Forgot?">
+                </div>
+            </form>  
+
+            <div class="form-group">
+                <div class="g-signin2" data-theme="dark" data-width="400px" data-height="50px"></div>
+            </div>   
+        </div>
+
+        <script>
+            function onSuccess(googleUser){
+                console.log('Login as: ' + googleUser.getBasicProfile().getName());
+            }
+            function onFailure(error){
+                console.log(error);
+            }
+            function renderButton() {
+                gapi.signin2.render('my-signin2', {
+                    'scope': 'profile email',
+                    'width': 240,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': onSuccess,
+                    'onfailure': onFailure
+                });
+            }
+        </script>
+    </div>
+</body>

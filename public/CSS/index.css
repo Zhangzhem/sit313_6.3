@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    width: 500px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+}
+#head-container{
+    width: 400px;
+    height: 50px;
+    margin-left: 50px;
+}
+#main-container{
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px gray;
+    border-style: solid;
+    border-radius: 10px;
+}
+#signin{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+#signup{
+    width: 100px;
+    height: 40px;
+    background: none;
+    margin-top: 20px;
+    margin-left: 60px;
+    border: 3px dodgerblue;
+    border-style: solid;
+    border-radius: 5px;
+}
+#submit{
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+    color: gainsboro;
+    border-radius:10px;
+    border: none;
+    background-color: dodgerblue;
+}
+#fogort{
+    border: none;
+    background: none;
+    color: dodgerblue;
+    font-size: 20px;
+}
+.form-group{
+    width: 400px;
+    height: fit-content;
+    margin-top: 10px;
+}
+.form-input{
+    width: 390px;
+    height: 30px;
+    margin: 0 auto;
+}

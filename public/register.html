@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zheming Zhang">
+    <title>iCrowdTask</title>
+    <link rel="stylesheet" type="text/css" href="CSS/register.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/create_account" method="POST">
+            <div class="title">
+                <p>Create an Account!</p>
+            </div>
+
+            <div class="input-group">
+                <label for="country" class="label-form">Country of residence*</label>
+                <select name="country" class="single-input">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antarctica">Antarctica</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <div class="sub-group">
+                    <label for="firstName" class="label-form">First name*</label>
+                    <input type="text" class="sub-input" name="firstName">
+                </div>
+
+                <div class="sub-group">
+                    <label for="lastName" class="label-form">Last name*</label>
+                    <input type="text" class="sub-input" name="lastName">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email" class="label-form">Email*</label>
+                <input type="text" class="single-input" name="email">
+            </div>
+
+            <div class="input-group">
+                <label for="password" class="label-form">Password*</label>
+                <input type="password" class="single-input" name="password">
+            </div>
+
+            <div class="input-group">
+                <label for="cPassword" class="label-form">Confirm password*</label>
+                <input type="password" class="single-input" name="cPassword">
+            </div>
+
+            <div class="address-group">
+                <label for="address" class="label-form">Address*</label>
+                <input type="text" class="single-input" name="address" style="margin-bottom: 5px;">
+                <input type="text" class="single-input" name="address">
+            </div>
+
+            <div class="input-group">
+                <div class="sub-group">
+                    <label for="city" class="label-form">City*</label>
+                    <input type="text" class="sub-input" name="city">
+                </div>
+
+                <div class="sub-group">
+                    <label for="state" class="label-form">State/Province/Region*</label>
+                    <input type="text" class="sub-input" name="state">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="postCode" class="label-form">ZIP/Post code</label>
+                <input type="number" class="single-input" name="postCode"> 
+            </div>
+
+            <div class="input-group">
+                <label for="mobileNumber" class="label-form">Mobile phone number</label>
+                <input type="number" class="single-input" name="mobileNumber"> 
+            </div>
+
+            <input type="submit" id="input-submit" name="submit" value="Create Account">
+        </form>
+    </div>
+</body>
